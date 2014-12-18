@@ -1,6 +1,8 @@
 GULPS2GO
 ========
 
+By A. Lippitt
+
 Android application for the GULPS project
 
 Folders:
