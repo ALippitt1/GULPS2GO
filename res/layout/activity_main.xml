@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- The main display window. Its going to hold several containers for fragments -->
+    
+    <TextView
+        android:id="@+id/textBluetoothStatusHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/bluetoothHeaderString"
+        android:textSize="20sp"                 >        
+    </TextView>
+    
+    <TextView
+        android:id="@+id/bluetoothStatusDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textBluetoothStatusHeader"
+        android:text="@string/disconnected"
+        android:textColor="@color/red"
+        android:textSize="20sp"             >        
+    </TextView>
+        
+    <FrameLayout 
+    	android:id="@+id/fragmentContainer"
+    	android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:layout_below="@id/bluetoothStatusDisplay" >
+	</FrameLayout>
+
+</RelativeLayout>

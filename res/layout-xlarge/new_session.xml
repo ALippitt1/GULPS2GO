@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true" >
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="20dp"
+	    android:text="@string/newSessionTitle"
+	    android:textSize="35sp"     >	    
+	</TextView>
+	
+	<FrameLayout 
+	    android:id="@+id/newSessionGraphFragment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="90"       >	    
+	</FrameLayout>
+	
+		<TableRow
+		    android:id="@+id/tableSessionData"
+	    	android:orientation="horizontal" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="0dp"
+		    android:layout_gravity="center"
+		    android:layout_weight="10"	    >
+	        <Button 
+	            android:id="@+id/newSessStart"
+	            android:text="@string/newSessionButton1"
+	            android:onClick="newSessionEvent"          >	            
+	        </Button>
+	        <Button
+	            android:id="@+id/newSessResume"
+	            android:text="@string/newSessionButton3"
+	            android:onClick="newSessionEvent"         >	            
+	        </Button>	            
+	        <Button
+	            android:id="@+id/newSessPause"
+	            android:text="@string/newSessionButton2"
+	            android:onClick="newSessionEvent"          >	            
+	        </Button>
+	        <Button
+	            android:id="@+id/newSessRestart"
+	            android:text="@string/newSessionButton5"
+	            android:onClick="newSessionEvent"          >	            
+	        </Button>
+	        <Button
+	            android:id="@+id/newSessSave"
+	            android:text="@string/newSessionButton6"
+	            android:onClick="newSessionEvent"          >	            
+	        </Button>
+        </TableRow>
+</LinearLayout>

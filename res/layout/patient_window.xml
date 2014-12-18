@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+        android:id="@+id/tablePatientDetails"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true" >
+	    <TableRow  
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"   >
+			    <TextView
+			        android:text="@string/detailsID"     >
+			    </TextView>
+			    <TextView
+			        android:id="@+id/viewID" 
+			        android:textIsSelectable="true"    >		        
+			    </TextView>
+	    </TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:padding="5dip"   >
+			    <TextView
+			        android:text="@string/detailsName"     >
+			    </TextView>
+			    <TextView
+			        android:id="@+id/viewName" 
+			        android:textIsSelectable="true"    >		        
+			    </TextView>
+		</TableRow>
+		<TableRow
+	        android:id="@+id/tableRow3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip" > 
+		    <TextView
+		        android:text="@string/detailsDOB"
+		        android:layout_gravity="center_vertical"      >        
+		    </TextView>
+		    <TextView
+		        android:id="@+id/viewDOB"
+		        android:textIsSelectable="true"     >	        
+		    </TextView>	        
+	    </TableRow>
+		<TableRow  
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"   >
+			    <TextView
+			        android:layout_gravity="center_vertical"
+			        android:text="@string/detailsGender"     >
+			    </TextView>
+			    <TextView
+			        android:id="@+id/viewGender"
+			        android:textIsSelectable="true"        >		        
+			    </TextView>
+		</TableRow>
+		<TableRow 
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:padding="5dip"   >
+			    <TextView
+			        android:text="@string/detailsNotes"     >
+			    </TextView>
+			    <TextView
+			        android:id="@+id/viewNotes" 
+			        android:textIsSelectable="true"    >		        
+			    </TextView>
+		</TableRow>
+		<TableRow
+		    android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:padding="5dip"
+	        android:gravity="center"   >
+			    <Button
+			        android:id="@+id/detailsButton1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patientButton1"
+			        android:onClick="patientWindow"     >		        
+			    </Button>
+	    </TableRow>
+	</TableLayout>
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tablePatientDetails"   >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+	    <Button 
+	        android:id="@+id/startNewSession"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/patientButton2"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	     <Button 
+	        android:id="@+id/loadSession"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/patientButton3"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	     <Button 
+	        android:id="@+id/startNewPatient"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/patientButton4"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	     <Button 
+	        android:id="@+id/loadPatient"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/patientButton5"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	     <Button 
+	        android:id="@+id/connectBT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"    
+	        android:text="@string/patientButton6"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	     <Button 
+	        android:id="@+id/disconnectBT"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"    
+	        android:text="@string/patientButton7"
+	        android:onClick="patientWindow"          >
+	    </Button>
+	    <Button
+	        android:id="@+id/exportDropBox"
+	       	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"        
+	        android:text="@string/patientButton8"
+	        android:onClick="patientWindow"          >		        
+	    </Button>
+	    </LinearLayout>
+	</ScrollView>
+</RelativeLayout>

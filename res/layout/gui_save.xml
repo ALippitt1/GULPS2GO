@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- Gui for the Save window fragment
+	 ListView is used to display the file explorer
+	   -->
+	   
+	<TextView
+	    android:id="@+id/titleString"
+	    style="@style/titleText"
+	    android:layout_gravity="center_horizontal"
+	    android:text="@string/saveTitle"
+	    android:textIsSelectable="true"             >	    
+	</TextView>  
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="10dp" >
+	
+		<TextView 
+		    android:id="@+id/textSaveLocation"
+		    style="@style/basicText"
+		    android:text="@string/saveLocation"   >
+		</TextView>
+		    
+		<TextView
+		    android:id="@+id/textfilePath"
+		    style="@style/basicText"
+		    android:layout_toRightOf="@id/textSaveLocation"
+		    android:paddingLeft="10dp"
+		    android:textIsSelectable="true"      	    >	    
+		</TextView>
+	</RelativeLayout>
+	    		
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:drawSelectorOnTop="false"   >
+    </ListView>
+		
+    <Button 
+		android:id="@+id/btDbxFiles"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+       	android:layout_gravity="center_horizontal"
+       	android:padding="15dp"
+		android:text="@string/saveButton2"
+		android:onClick="saveLocationEvent"    >	        
+    </Button>
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="15dp"
+        android:text="@string/saveButton3"
+        android:onClick="saveLocationEvent"    >        
+    </Button>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TableLayout
+	    android:id="@+id/tableSessionData"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"      >
+	    
+	    <TableRow
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"     >
+	        <TextView
+	            android:text="@string/loadSessionTitle"	    >	            
+	        </TextView>           
+	        <TextView
+	            android:id="@+id/displaySessionNumber"
+	            android:textIsSelectable="true"        >
+	        </TextView>
+	    </TableRow>
+	    <TableRow
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"      >
+	        <TextView
+	            android:id="@+id/displaySessionType"
+	            android:text="@string/loadSessionType"
+	            android:textIsSelectable="true"           >	            
+	        </TextView>
+	    </TableRow>
+	    <TableRow
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"     >
+	        <TextView
+	            android:id="@+id/displaySessionDate"
+	            android:text="@string/loadSessionDate"
+	            android:textIsSelectable="true"    >
+	        </TextView>
+	        <TextView
+	            android:id="@+id/displaySessionTime"
+	            android:text="@string/loadSessionTime"
+	            android:textIsSelectable="true"      >
+            </TextView>
+       </TableRow>
+	</TableLayout>
+	
+	<FrameLayout 
+	    android:id="@+id/staticGraphFragment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="100"       	           >	    
+	</FrameLayout>
+		    
+    <Button 
+	    android:id="@+id/displaySessionNew"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/loadSessionNew"
+	    android:onClick="loadPreviousSession"          >
+	</Button>
+    
+</LinearLayout>

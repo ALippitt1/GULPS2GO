@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtPaused"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pausedText"
+        android:visibility="gone" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtDisplayPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textIsSelectable="true"
+        android:textSize="25sp" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/chart_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPaused"
+        android:orientation="horizontal" >
+    </RelativeLayout>
+
+     <Button
+         android:id="@+id/displaySessionRotate"
+         android:layout_width="wrap_content"
+         android:layout_height="36dp"
+         android:layout_alignParentBottom="true"
+         android:onClick="changeGraphDisplay"
+         android:text="@string/graphButton1" >
+     </Button>
+</RelativeLayout>
