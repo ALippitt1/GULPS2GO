@@ -19,7 +19,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import com.extraDisplayFragments.CustomDatePickerFragment;
-import savingPackageNew.patientInfoMap;
+
+import savingPackage.patientInfoMap;
 
 public class EnterDetailsFragment extends Fragment{
 

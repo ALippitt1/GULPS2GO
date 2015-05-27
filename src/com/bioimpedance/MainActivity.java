@@ -3,10 +3,10 @@ package com.bioimpedance;
 import java.util.ArrayList;
 import java.util.Map;
 
-import savingPackageNew.DropboxClass;
-import savingPackageNew.FileMasterClass;
-import savingPackageNew.SDCardClass;
-import savingPackageNew.patientInfoMap;
+import savingPackage.DropboxClass;
+import savingPackage.FileMasterClass;
+import savingPackage.SDCardClass;
+import savingPackage.patientInfoMap;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

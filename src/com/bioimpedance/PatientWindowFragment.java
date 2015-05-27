@@ -9,8 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
-import savingPackageNew.patientInfoMap;
+import savingPackage.patientInfoMap;
 
 public class PatientWindowFragment extends Fragment{
 	
